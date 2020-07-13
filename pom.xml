@@ -13,6 +13,7 @@
         <module>springcloud-api-commons</module>
         <module>springcloud-eureka-server7001</module>
         <module>springcloud-eureka-server7002</module>
+        <module>springcloud-provider-datainfo8002</module>
     </modules>
     <packaging>pom</packaging>
 
