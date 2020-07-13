@@ -96,5 +96,11 @@ public class DataInfoController {
         return this.discoveryClient;
     }
 
+    @GetMapping("/health")
+    @ResponseBody
+    public String health(){  //Gateway对微服务进行健康检查
+        return "ok";
+    }
+
 
 }

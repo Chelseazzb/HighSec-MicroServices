@@ -1,0 +1,62 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: payment_routh1          #路由的ID，没有固定的规则但要求唯一，建议配合服务名
+          #          uri: http://localhost:8001 #匹配后提供的路由地址
+          uri: lb://cloud-datainfo-service
+          predicates:
+            - Path=/dataInfo/get/**   #断言，路由相匹配的进行路由
+
+        - id: payment_routh2         #路由的ID，没有固定的规则但要求唯一，建议配合服务名
+          #          uri: http://localhost:8001 #匹配后提供的路由地址
+          uri: lb://cloud-datainfo-service
+          predicates:
+            - Path=/dataInfo/lb/**    #断言，路由相匹配的进行路由
+
+        - id: payment_routh3         #路由的ID，没有固定的规则但要求唯一，建议配合服务名
+          #          uri: http://localhost:8001 #匹配后提供的路由地址
+          uri: lb://cloud-datainfo-service
+          predicates:
+            - Path=/dataInfo/put/**    #断言，路由相匹配的进行路由
+
+        - id: payment_routh4         #路由的ID，没有固定的规则但要求唯一，建议配合服务名
+          #          uri: http://localhost:8001 #匹配后提供的路由地址
+          uri: lb://cloud-datainfo-service
+          predicates:
+            - Path=/dataInfo/delete/**    #断言，路由相匹配的进行路由
+
+        - id: payment_routh2         #路由的ID，没有固定的规则但要求唯一，建议配合服务名
+          #          uri: http://localhost:8001 #匹配后提供的路由地址
+          uri: lb://cloud-datainfo-service
+          predicates:
+            - Path=/dataInfo/create/**    #断言，路由相匹配的进行路由
+
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能，利用服务名进行路由
+
+
+eureka:
+  instance:
+    hostname: cloud-gateway-service
+    prefer-ip-address: true
+    instance-id: eureka-client-gateway
+  client: #服务提供者provider注册进eureka服务列表内
+    service-url:
+      register-with-eureka: true #表示是否将自己注册进EurekaServer，默认为true
+      fetch-registry: true #是否从EurekaServer抓取已有的注册信息，默认为true，单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+      #集群版
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+
+# feign和ribbon结合，指定策略。feign默认的是轮询的策略，这里的配置可以自定义
+cloud-datainfo-service: # eureka-client 表示作用到哪个微服务
+  ribbon:
+    listOfServers: localhost:8001, localhost:8002
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule #自定义只需要把包放在这里即可,RandomRule是随机
+    NFLoadBalancerPingClassName: highsec.microservices.springcloud.health.HealthExamination

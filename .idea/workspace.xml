@@ -2,30 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f1808b-33b5-4e29-84fa-61c8c90e3926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/myrule/MyselfRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/DataInfoMain8002.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/config/DruidConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/dao/DataInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/service/DataInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/service/impl/DataInfoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/mapper/DataInfoMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/sql/datainfo.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-gateway9001/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/GatewayMain9001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/health/HealthExamination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/FeignClientMain80.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/RibbonClientMain80.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/controller/ConsumerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/controller/ConsumerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/FeignClientMain80.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/config/ApplicationContextConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/controller/ConsumerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/controller/ConsumerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/DataInfoMain8001.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/DataInfoMain8001.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/controller/DataInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/controller/DataInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8002/target/classes/highsec/microservices/springcloud/controller/DataInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8002/target/classes/highsec/microservices/springcloud/controller/DataInfoController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,6 +22,7 @@
     <ignored path="$PROJECT_DIR$/springcloud-eureka-server7001/target/" />
     <ignored path="$PROJECT_DIR$/springcloud-eureka-server7002/target/" />
     <ignored path="$PROJECT_DIR$/springcloud-provider-datainfo8002/target/" />
+    <ignored path="$PROJECT_DIR$/springcloud-gateway-gateway9001/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,48 +41,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1738">
-              <caret line="91" column="94" selection-start-line="91" selection-start-column="94" selection-end-line="91" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3044#3045#0" expanded="true" />
-                <element signature="e#3088#3089#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1194">
+              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/RibbonClientMain80.java">
+        <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/myrule/MyselfRule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#211#212#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="154">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -146,17 +102,22 @@
         <option value="$PROJECT_DIR$/springcloud-eureka-server7002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springcloud-eureka-server7002/src/main/java/highsec/microservices/springcloud/EurekaMain7002.java" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/mapper/DataInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" />
         <option value="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/controller/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" />
-        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" />
         <option value="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/myrule/MyselfRule.java" />
         <option value="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/RibbonClientMain80.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/health/HealthExamination.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" />
+        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-gateway9001/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/GatewayMain9001.java" />
+        <option value="$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -175,7 +136,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springcloud-gateway-gateway9001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springcloud-gateway-gateway9001" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -193,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,12 +172,16 @@
               <item name="HighSec-MicroServices" type="b2602c69:ProjectViewProjectNode" />
               <item name="HighSec-MicroServices" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HighSec-MicroServices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HighSec-MicroServices" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-gateway-gateway9001" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,6 +291,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayMain9001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springcloud-gateway-gateway9001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="highsec.microservices.springcloud.GatewayMain9001" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RibbonClientMain80" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springcloud-consumer-ribbonclient80" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="highsec.microservices.springcloud.RibbonClientMain80" />
@@ -327,6 +310,7 @@
       <item itemvalue="Application.Test" />
       <item itemvalue="Spring Boot.DataInfoMain8001" />
       <item itemvalue="Spring Boot.RibbonClientMain80" />
+      <item itemvalue="Spring Boot.GatewayMain9001" />
       <item itemvalue="Spring Boot.DataInfoMain8002" />
       <item itemvalue="Spring Boot.EurekaMain7001" />
       <item itemvalue="Spring Boot.EurekaMain7002" />
@@ -355,17 +339,19 @@
       <workItem from="1594601837495" duration="1932000" />
       <workItem from="1594603785926" duration="6873000" />
       <workItem from="1594611090543" duration="7820000" />
-      <workItem from="1594625702946" duration="1077000" />
+      <workItem from="1594625702946" duration="7716000" />
+      <workItem from="1594636632518" duration="776000" />
+      <workItem from="1594637855861" duration="1426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29289000" />
+    <option name="totallyTimeSpent" value="38130000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3125506" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31740892" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -389,7 +375,7 @@
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="bottom" id="Run Dashboard" order="16" weight="0.57295376" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="16" visible="true" weight="0.57295376" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,24 +431,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/DataInfoMain8001.java" />
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/sql/datainfo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="35" lean-forward="true" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../java_workspace/spring-boot-emps-thymeleaf/src/main/java/person/zzb/springboot/dao/EmployeeDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../java_workspace/spring-boot-emps-thymeleaf/src/main/resources/mapper/EmployeeDAOMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -651,13 +619,6 @@
     <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/sql/datainfo.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="46" column="40" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/mapper/DataInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="638">
@@ -706,13 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/mapper/DataInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-374">
@@ -740,21 +694,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/RibbonClientMain80.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1738">
-          <caret line="91" column="94" selection-start-line="91" selection-start-column="94" selection-end-line="91" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="88" column="50" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+        <state relative-caret-position="270">
+          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3088#3089#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,13 +716,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/RibbonClientMain80.java">
+    <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/health/HealthExamination.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="220">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/java/highsec/microservices/springcloud/GatewayMain9001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="98" column="26" lean-forward="true" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3044#3045#0" expanded="true" />
+            <element signature="e#3088#3089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8002/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1194">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-gateway-gateway9001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
