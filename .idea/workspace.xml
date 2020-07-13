@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1f1808b-33b5-4e29-84fa-61c8c90e3926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/FeignClientMain80.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/java/highsec/microservices/springcloud/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/src/test/java/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/FeignClientMain80.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/config/ApplicationContextConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/classes/highsec/microservices/springcloud/controller/ConsumerController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/test-classes/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-consumer-feignclient80/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-api-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/DataInfoMain8001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/entity/CommonResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-api-commons/src/main/java/highsec/microservices/springcloud/entity/CommonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/entity/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-api-commons/src/main/java/highsec/microservices/springcloud/entity/DataInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/entity/CommonResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-provider-datainfo8001/target/classes/highsec/microservices/springcloud/entity/CommonResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud-api-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud-api-commons/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,6 +10,7 @@
     <ignored path="$PROJECT_DIR$/springcloud-consumer-feignclient80/target/" />
     <ignored path="$PROJECT_DIR$/springcloud-api-commons/target/" />
     <ignored path="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/target/" />
+    <ignored path="$PROJECT_DIR$/springcloud-eureka-server7001/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +26,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springcloud-eureka-server7001/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -63,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springcloud-api-commons/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state relative-caret-position="242">
+              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -126,11 +112,11 @@
         <option value="$PROJECT_DIR$/springcloud-consumer-feignclient80/src/test/java/Test.java" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/highsec/microservices/springcloud/controller/DataInfoController.java" />
         <option value="$PROJECT_DIR$/springcloud-consumer-feignclient80/src/main/java/highsec/microservices/springcloud/controller/ConsumerController.java" />
-        <option value="$PROJECT_DIR$/springcloud-api-commons/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-provider-datainfo8001/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-consumer-feignclient80/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-consumer-ribbonclient80/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-api-commons/pom.xml" />
       </list>
     </option>
   </component>
@@ -178,7 +164,7 @@
             <path>
               <item name="HighSec-MicroServices" type="b2602c69:ProjectViewProjectNode" />
               <item name="HighSec-MicroServices" type="462c0819:PsiDirectoryNode" />
-              <item name="springcloud-consumer-ribbonclient80" type="462c0819:PsiDirectoryNode" />
+              <item name="springcloud-api-commons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,12 +261,12 @@
       <workItem from="1594542326756" duration="4095000" />
       <workItem from="1594550026331" duration="7492000" />
       <workItem from="1594601837495" duration="1932000" />
-      <workItem from="1594603785926" duration="6492000" />
+      <workItem from="1594603785926" duration="6722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20011000" />
+    <option name="totallyTimeSpent" value="20241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
@@ -361,6 +347,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/springcloud-provider-datainfo8001/src/main/java/DataInfoMain8001.java" />
@@ -563,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springcloud-api-commons/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springcloud-api-commons/src/main/java/highsec/microservices/springcloud/entity/CommonResult.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -594,6 +576,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-eureka-server7001/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-api-commons/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
