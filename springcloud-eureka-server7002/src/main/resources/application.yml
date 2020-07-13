@@ -1,11 +1,11 @@
 server:
-  port: 7001
+  port: 7002
 
 eureka:
   instance:
-    hostname: eureka7001.com #eureka服务端的实例主机名称
+    hostname: eureka7002.com #eureka服务端的实例名称
     appname: cloud-eureka-server # 服务名，默认取 spring.application.name 配置值，如果没有则为 unknown
-    instance-id: eureka-server-instance1 # 实例ID
+    instance-id: eureka-server-instance2 # 实例ID
     prefer-ip-address: true #客户端在注册时使用自己的IP而不是主机名，缺省：false
     lease-expiration-duration-in-seconds: 90 # 服务失效时间，失效的服务将被剔除。单位：秒，默认：90
     lease-renewal-interval-in-seconds: 30 # 服务续约（心跳）频率，单位：秒，缺省30
@@ -14,5 +14,4 @@ eureka:
     fetch-registry: false #false表示自己端就是服务中心，只需要去维护实例，不需要检索服务
     service-url:
       #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址
-#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #单个Eureka Server版
-      defaultZone: http://eureka7002.com:7002/eureka/ #互相注册，互相守望
+      defaultZone: http://eureka7001.com:7001/eureka/ #互相注册，互相守望
