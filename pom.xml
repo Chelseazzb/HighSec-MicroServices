@@ -9,7 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springcloud-provider-datainfo8001</module>
-        <module>springcloud-consumer-feignclient80</module>
+        <module>springcloud-consumer-ribbonclient80</module>
+        <module>springcloud-api-commons</module>
+        <module>springcloud-eureka-server7001</module>
     </modules>
     <packaging>pom</packaging>
 

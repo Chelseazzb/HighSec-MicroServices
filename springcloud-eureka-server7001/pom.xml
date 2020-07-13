@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-consumer-feignclient80</artifactId>
+    <artifactId>springcloud-eureka-server7001</artifactId>
 
 
 </project>

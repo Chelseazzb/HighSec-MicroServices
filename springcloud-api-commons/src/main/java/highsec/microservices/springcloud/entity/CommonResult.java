@@ -6,9 +6,7 @@ import lombok.NoArgsConstructor;
 
 /**
  * @ClassName : CommonResult
- * @Author : Zhai Zhibin
- * @Date : 2020/7/2 18:32
- * @Description : ToDo
+ * @Description : 以模板类的方式返回给客户端
  * @Modified_by :
  * @Version : 1.0
  **/

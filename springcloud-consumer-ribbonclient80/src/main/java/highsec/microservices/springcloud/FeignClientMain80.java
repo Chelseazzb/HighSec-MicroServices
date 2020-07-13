@@ -4,15 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @ClassName : DataInfoMain8001
- * @Description : DataInfo服务提供者主启动类
+ * @ClassName : FeignClientMain80
+ * @Description : Feign客户端80主启动类
  * @Modified_by :
  * @Version : 1.0
  **/
 @SpringBootApplication
-public class DataInfoMain8001 {
+public class FeignClientMain80 {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataInfoMain8001.class, args);
+        SpringApplication.run(FeignClientMain80.class, args);
     }
 }

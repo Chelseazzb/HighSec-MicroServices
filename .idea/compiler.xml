@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-consumer-feignclient80" />
+        <module name="springcloud-consumer-ribbonclient80" />
         <module name="springcloud-provider-datainfo8001" />
+        <module name="springcloud-eureka-server7001" />
+        <module name="springcloud-api-commons" />
       </profile>
     </annotationProcessing>
   </component>

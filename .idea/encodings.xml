@@ -2,7 +2,9 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springcloud-consumer-feignclient80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-api-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-consumer-ribbonclient80" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-eureka-server7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-provider-datainfo8001" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

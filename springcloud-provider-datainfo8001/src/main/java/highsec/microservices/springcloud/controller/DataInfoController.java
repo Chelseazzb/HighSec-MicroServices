@@ -57,7 +57,7 @@ public class DataInfoController {
     }
 
     @PutMapping(value = "/dataInfo/put")
-    public CommonResult updateDataInfo(@RequestBody DataInfo dataInfo){ //通过id删除业务数据
+    public CommonResult updateDataInfo(@RequestBody DataInfo dataInfo){ //更新业务数据
         int result = dataInfoService.updateDataInfo(dataInfo);
         log.info("********更新DataInfo结果：" + result + "********"); //打印日志
         if (result > 0){
