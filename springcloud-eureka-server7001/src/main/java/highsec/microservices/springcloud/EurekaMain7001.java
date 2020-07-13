@@ -2,19 +2,19 @@ package highsec.microservices.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
- * @ClassName : FeignClientMain80
- * @Description : Feign客户端80主启动类
+ * @ClassName : EurekaMain7001
+ * @Description : ToDo
  * @Modified_by :
  * @Version : 1.0
  **/
 @SpringBootApplication
-@EnableEurekaClient //激活Eureka Client
-public class FeignClientMain80 {
+@EnableEurekaServer //代表是Eureka Server
+public class EurekaMain7001 {
 
     public static void main(String[] args) {
-        SpringApplication.run(FeignClientMain80.class, args);
+        SpringApplication.run(EurekaMain7001.class, args);
     }
 }

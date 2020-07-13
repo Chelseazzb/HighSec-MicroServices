@@ -13,6 +13,12 @@
 
     <dependencies>
 
+        <!--作为Eureka Client-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <!--引入自定义的api通用包，可以使用Payment支付Entity-->
         <dependency>
             <groupId>highsec.microservice.springcloud</groupId>
