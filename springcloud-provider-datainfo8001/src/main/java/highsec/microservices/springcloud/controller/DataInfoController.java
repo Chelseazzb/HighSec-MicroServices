@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @ClassName : DataInfoController
@@ -46,6 +47,12 @@ public class DataInfoController {
     @GetMapping(value = "/dataInfo/get/{id}")
     public CommonResult<DataInfo> getDataInfoById(@PathVariable("id") Long id){  //通过id查询业务数据
 
+        //暂停三秒钟
+        try {
+            TimeUnit.SECONDS.sleep((3));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         DataInfo result = dataInfoService.getDataInfoById(id);
         log.info("********查询DataInfo结果：" + result + "*******"); //打印日志
         if (result != null){
