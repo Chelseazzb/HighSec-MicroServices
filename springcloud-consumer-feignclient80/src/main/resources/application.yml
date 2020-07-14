@@ -13,3 +13,8 @@ eureka:
 ribbon:
   ReadTimeout: 5000    #指的是建立连接后从服务器读取到可用资源所用的时间
   ConnectTimeout: 5000 #指的是建立连接所用的时间，适用于网络正常情况下，两端连接所用的时间
+
+logging:
+  level:
+    #feign日志以什么级别监控哪个接口
+    highsec.microservices.springcloud.service.DataInfoFeignService: debug #信息更详细
