@@ -1,5 +1,7 @@
 package highsec.microservices.springcloud.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import highsec.microservices.springcloud.entity.CommonResult;
 import highsec.microservices.springcloud.entity.DataInfo;
 import highsec.microservices.springcloud.service.DataInfoService;
@@ -44,12 +46,16 @@ public class DataInfoController {
         }
     }
 
+    //设置超时峰值为3秒和处理超时的方法
+    @HystrixCommand(fallbackMethod = "getDataInfoById_Fallback" ,commandProperties = {
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds" , value = "3000")
+    })
     @GetMapping(value = "/dataInfo/get/{id}")
     public CommonResult<DataInfo> getDataInfoById(@PathVariable("id") Long id){  //通过id查询业务数据
 
-        //暂停三秒钟
+        //暂停四秒钟
         try {
-            TimeUnit.SECONDS.sleep((3));
+            TimeUnit.SECONDS.sleep((2));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -60,6 +66,14 @@ public class DataInfoController {
         }else {
             return new CommonResult(444, "使用端口：" + serverPort + "的服务查询DataInfo没有记录，id为：" + id, null);
         }
+    }
+
+    //超时处理方法，Hystrix会使用自己的线程池
+    public CommonResult<DataInfo> getDataInfoById_Fallback(Long id){
+
+        return new CommonResult(500,"线程池：" + Thread.currentThread().getName() +
+                ", 8002系统繁忙或者运行报错，请稍后再试, id: " + id + "\t" + "o(╥﹏╥)o");
+
     }
 
     @DeleteMapping(value = "/dataInfo/delete/{id}")
