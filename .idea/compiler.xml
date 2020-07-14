@@ -10,11 +10,11 @@
         <module name="springcloud-eureka-server7002" />
         <module name="springcloud-eureka-server7001" />
         <module name="springcloud-consumer-ribbonclient80" />
-        <module name="springcloud-consumer-feignclient80" />
+        <module name="springcloud-api-commons" />
         <module name="springcloud-provider-datainfo8002" />
         <module name="springcloud-provider-datainfo8001" />
         <module name="springcloud-gateway-gateway9001" />
-        <module name="springcloud-api-commons" />
+        <module name="springcloud-consumer-feignclient80" />
       </profile>
     </annotationProcessing>
   </component>

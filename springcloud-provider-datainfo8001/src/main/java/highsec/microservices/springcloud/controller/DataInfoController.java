@@ -1,5 +1,6 @@
 package highsec.microservices.springcloud.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import highsec.microservices.springcloud.entity.CommonResult;
@@ -23,6 +24,7 @@ import java.util.concurrent.TimeUnit;
  **/
 @RestController
 @Slf4j
+@DefaultProperties(defaultFallback = "global_Fallback_Method")
 public class DataInfoController {
 
     @Resource
@@ -34,6 +36,7 @@ public class DataInfoController {
     @Resource
     private DiscoveryClient discoveryClient;
 
+    @HystrixCommand //服务降级默认使用全局方法
     @PostMapping(value = "/dataInfo/create")
     public CommonResult create(@RequestBody DataInfo dataInfo){  //插入一条业务数据
 
@@ -53,12 +56,13 @@ public class DataInfoController {
     @GetMapping(value = "/dataInfo/get/{id}")
     public CommonResult<DataInfo> getDataInfoById(@PathVariable("id") Long id){  //通过id查询业务数据
 
-        //暂停四秒钟
-        try {
-            TimeUnit.SECONDS.sleep((2));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //暂停二秒钟
+//        try {
+//            TimeUnit.SECONDS.sleep((2));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        //int age = 10 / 0; //计算错误也会触发降级
         DataInfo result = dataInfoService.getDataInfoById(id);
         log.info("********查询DataInfo结果：" + result + "*******"); //打印日志
         if (result != null){
@@ -76,6 +80,7 @@ public class DataInfoController {
 
     }
 
+    @HystrixCommand //服务降级默认使用全局方法
     @DeleteMapping(value = "/dataInfo/delete/{id}")
     public CommonResult deleteDataInfoById(@PathVariable("id") Long id){ //通过id删除业务数据
         int result = dataInfoService.deleteDataInfoById(id);
@@ -87,6 +92,7 @@ public class DataInfoController {
         }
     }
 
+    @HystrixCommand //服务降级默认使用全局方法
     @PutMapping(value = "/dataInfo/put")
     public CommonResult updateDataInfo(@RequestBody DataInfo dataInfo){ //更新业务数据
         int result = dataInfoService.updateDataInfo(dataInfo);
@@ -98,11 +104,13 @@ public class DataInfoController {
         }
     }
 
+    @HystrixCommand //服务降级默认使用全局方法
     @GetMapping("/dataInfo/lb")
     public String getPaymentLB(){ //获得服务的端口号
         return serverPort;
     }
 
+    @HystrixCommand //服务降级默认使用全局方法
     @GetMapping("/dataInfo/discovery")
     public Object discovery(){ //查看服务的实例列表
         List<String> services = discoveryClient.getServices();
@@ -117,6 +125,7 @@ public class DataInfoController {
         return this.discoveryClient;
     }
 
+    @HystrixCommand //服务降级默认使用全局方法
     @GetMapping("/health")
     @ResponseBody
     public String health(){  //Gateway对微服务进行健康检查
@@ -124,4 +133,8 @@ public class DataInfoController {
     }
 
 
+    //下面是全局fallback方法
+    public CommonResult<DataInfo> global_Fallback_Method(){
+        return new CommonResult(503,"目前微服务不可用，请稍后再试，o(╥﹏╥)o");
+    }
 }
