@@ -16,6 +16,7 @@
         <module>springcloud-provider-datainfo8002</module>
         <module>springcloud-gateway-gateway9001</module>
         <module>springcloud-consumer-feignclient80</module>
+        <module>springcloud-hystrix-dashboard6001</module>
     </modules>
     <packaging>pom</packaging>
 

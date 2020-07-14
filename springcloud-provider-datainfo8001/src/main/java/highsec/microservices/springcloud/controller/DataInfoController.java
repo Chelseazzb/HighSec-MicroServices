@@ -104,7 +104,7 @@ public class DataInfoController {
         }
     }
 
-    @HystrixCommand //服务降级默认使用全局方法
+
     @GetMapping("/dataInfo/lb")
     public String getPaymentLB(){ //获得服务的端口号
         return serverPort;
@@ -125,7 +125,6 @@ public class DataInfoController {
         return this.discoveryClient;
     }
 
-    @HystrixCommand //服务降级默认使用全局方法
     @GetMapping("/health")
     @ResponseBody
     public String health(){  //Gateway对微服务进行健康检查
