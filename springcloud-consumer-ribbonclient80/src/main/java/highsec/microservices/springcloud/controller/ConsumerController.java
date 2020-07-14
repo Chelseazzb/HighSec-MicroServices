@@ -1,5 +1,6 @@
 package highsec.microservices.springcloud.controller;
 
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import highsec.microservices.springcloud.entity.CommonResult;
 import highsec.microservices.springcloud.entity.DataInfo;
 import lombok.extern.slf4j.Slf4j;
@@ -63,4 +64,5 @@ public class ConsumerController {
         }
 
     }
+
 }
