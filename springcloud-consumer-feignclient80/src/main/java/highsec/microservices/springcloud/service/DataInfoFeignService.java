@@ -28,10 +28,5 @@ public interface DataInfoFeignService { //将DataInfoController中的方法头�
     @PutMapping(value = "/dataInfo/put")
     public CommonResult updateDataInfo(@RequestBody DataInfo dataInfo);
 
-    @GetMapping("/dataInfo/discovery")
-    public Object discovery();
-
-
-
 
 }
