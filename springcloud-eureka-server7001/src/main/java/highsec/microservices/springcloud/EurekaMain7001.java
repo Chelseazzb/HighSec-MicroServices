@@ -6,7 +6,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @ClassName : EurekaMain7001
- * @Description : ToDo
+ * @Description : Eureka的服务器实例1
  * @Modified_by :
  * @Version : 1.0
  **/

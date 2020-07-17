@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @ClassName : FeignClientMain80
- * @Description : ToDo
+ * @Description : Feign客户端-微服务消费者
  * @Modified_by :
  * @Version : 1.0
  **/

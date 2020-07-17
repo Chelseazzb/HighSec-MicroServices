@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName : MyselfRule
- * @Description : ToDo
+ * @Description : Ribbon负载均衡算法的配置类
  * @Modified_by :
  * @Version : 1.0
  **/

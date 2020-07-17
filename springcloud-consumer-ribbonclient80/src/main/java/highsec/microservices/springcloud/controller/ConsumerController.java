@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 
 /**
  * @ClassName : ConsumerController
- * @Description : ToDo
+ * @Description : 微服务消费者的控制类
  * @Modified_by :
  * @Version : 1.0
  **/

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @ClassName : DataInfoFeignService
- * @Description : ToDo
+ * @Description : OpenFeign的服务接口，与微服务提供者Controller一一对应
  * @Modified_by :
  * @Version : 1.0
  **/

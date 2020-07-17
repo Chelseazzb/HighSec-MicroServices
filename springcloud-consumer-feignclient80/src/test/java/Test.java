@@ -2,7 +2,7 @@ import java.util.Date;
 
 /**
  * @ClassName : Test
- * @Description : ToDo
+ * @Description :获得当前时间的毫秒数
  * @Modified_by :
  * @Version : 1.0
  **/

@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @ClassName : GatewayMain9001
- * @Description : ToDo
+ * @Description : 微服务网关Gateway
  * @Modified_by :
  * @Version : 1.0
  **/

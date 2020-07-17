@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName : FeignConfig
- * @Description : ToDo
+ * @Description :
  * @Modified_by :
  * @Version : 1.0
  **/

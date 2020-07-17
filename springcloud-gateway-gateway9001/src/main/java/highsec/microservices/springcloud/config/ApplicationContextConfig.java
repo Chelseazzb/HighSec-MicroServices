@@ -6,7 +6,7 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * @ClassName : ApplicationContextConfig
- * @Description : ToDo
+ * @Description : RestTemplate远程调用的配置类
  * @Modified_by :
  * @Version : 1.0
  **/
